@@ -83,24 +83,17 @@ console.log(database5.gender)
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 
-let kennan = {
-  speak: function () {
-    return ("Hello, my name is " + database2.name);
-  }
-}
+ database2.speak = () => ("Hello, my name is " + database2.name);
 
- console.log(kennan.speak());
+
+ console.log(database2.speak());
 
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 
-let antonietta = {
-  multiplyNums: function (num1,num2) {
-    return (num1 * num2);
-  }
-}
+database5.multiplyNums = (num1,num2) => num1 * num2;
 
-console.log(antonietta.multiplyNums(3,4));
+console.log(database5.multiplyNums(3,4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
